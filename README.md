@@ -17,7 +17,7 @@ And most importantly **have fun**!! (non-optional 😊)
 6. Run the following command: `start`
 
 ## Every Tuesday
-Every Tuesday a new dataset is added to this project. To begin your tidytuesday challenge, you just need to do the following two steps:
+Every Tuesday a new dataset is added to this project. To begin a tidytuesday challenge, complete the following two steps:
 1. Navigate into the `tidytuesday` directory
 2. Run `start`
 
