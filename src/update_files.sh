@@ -1,3 +1,5 @@
+git add .
+git commit -m 'commiting unstaged changes'
 git checkout master
 git pull origin master
 git checkout flatiron
@@ -11,4 +13,3 @@ rm open_directory.txt
 git add ../data
 git commit -m 'updating data files'
 jupyter lab $notebook_dir
-
