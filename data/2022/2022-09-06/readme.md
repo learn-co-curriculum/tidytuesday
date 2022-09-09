@@ -24,7 +24,7 @@ Penn State has an [article](https://accessibility.psu.edu/images/charts/) on wri
 
 > Charts, graphs and maps use visuals to convey complex images to users. But since they are images, these media provide serious accessibility issues to colorblind users and users of screen readers. See the [examples on this page](https://accessibility.psu.edu/images/charts/) for details on how to make charts more accessible.
 
-The `{rtweet}` package includes the [ability to post tweets](https://docs.ropensci.org/rtweet/reference/post_tweet.html) with alt text programatically.
+
 
 Need a **reminder**? There are [extensions](https://chrome.google.com/webstore/detail/twitter-required-alt-text/fpjlpckbikddocimpfcgaldjghimjiik/related) that force you to remember to add Alt Text to Tweets with media.
 
@@ -36,7 +36,7 @@ The data this week comes from [rebrickable](https://rebrickable.com/downloads/) 
 
 
 
-### Get the data here
+### 
 
 ```{r}
 # Get the Data
@@ -88,7 +88,7 @@ sets <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidyt
 |num_parts |double    |variable    |
 |img_url   |character |variable    |
 
-### Cleaning Script
+### 
 
 ```r
 library(tidyverse)
