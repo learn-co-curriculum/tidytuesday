@@ -29,5 +29,5 @@ if __name__ == "__main__":
     save_index(index)
 
     with open(Path(__file__).resolve().parent / 'open_directory.txt', 'w') as file:
-        file.write(dirpath)
+        file.write((Path(dirpath) / 'index.ipynb').as_posix())
 
