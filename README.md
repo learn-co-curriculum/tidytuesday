@@ -19,6 +19,6 @@ And most importantly **have fun**!! (non-optional 😊)
 ## Every Tuesday
 Every Tuesday a new dataset is added to this project. To begin a tidytuesday challenge, complete the following two steps:
 1. Navigate into the `tidytuesday` directory
-2. Run `start`
+2. Run `bin/start`
 
 
