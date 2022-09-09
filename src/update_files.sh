@@ -10,5 +10,5 @@ notebook_dir=$(cat open_directory.txt)
 rm open_directory.txt
 git add ../data
 git commit -m 'updating data files'
-jupyter lab $open_directory
+jupyter lab $notebook_dir
 
