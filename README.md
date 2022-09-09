@@ -1,7 +1,11 @@
 # Flatiron Tidy Tuesday
 
 Every Tuesday a new dataset is uploaded as a low stakes data challenge!
-**Explore** the data, **visualize** the data, **share** your findings in the [#tidytuesday](https://flatiron-school.slack.com/archives/C041Q4TCL13) channel (optional) and **have fun**!! (non-optional 😊)
+- **Explore** the data
+- **Visualize** the data
+- **Share** your findings in the [#tidytuesday](https://flatiron-school.slack.com/archives/C041Q4TCL13) channel (optional) 
+
+And most importantly **have fun**!! (non-optional 😊)
 
 ## Getting started
 
