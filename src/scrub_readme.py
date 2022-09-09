@@ -9,6 +9,7 @@ def scrub_readme(readme):
     text = remove_code_blocks(readme)
     text = remove_empty_sections(text)
     text = remove_r_references(text)
+    text = remove_alt_text_message(text)
     return text
 
 
@@ -49,6 +50,14 @@ def remove_r_references(readme):
             if ref in line:
                 text = text.replace(line, '')
     return text
+
+def remove_alt_text_message(readme):
+    lines = []
+    found_index = 0
+    for idx, line in enumerate(readme.split('\n')):
+        if 'force you to remember to add Alt Text to Tweets with media.' in line:
+            found_index = idx
+    return '\n'.join(lines[idx+1:])
 
 
 if __name__ == "__main__":
