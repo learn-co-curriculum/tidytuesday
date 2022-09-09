@@ -13,7 +13,7 @@ def scrub_readme(readme):
 
 
 def remove_code_blocks(readme):
-     text = re.sub(r"```[^\S\r\n]*[a-z]*\n.*?\n```", '', readme)
+     text = re.sub(r"^```[^\S\r\n]*[a-z]*(?:\n(?!```$).*)*\n```", '', readme, 5, re.MULTILINE)
      return text
 
 
