@@ -52,12 +52,12 @@ def remove_r_references(readme):
     return text
 
 def remove_alt_text_message(readme):
-    lines = []
+    lines = readme.split('\n')
     found_index = 0
-    for idx, line in enumerate(readme.split('\n')):
+    for idx, line in enumerate(lines):
         if 'force you to remember to add Alt Text to Tweets with media.' in line:
             found_index = idx
-    return '\n'.join(lines[idx+1:])
+    return '\n'.join(lines[found_index+1:])
 
 
 if __name__ == "__main__":
