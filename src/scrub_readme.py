@@ -40,7 +40,7 @@ def remove_empty_sections(readme):
 
 def remove_r_references(readme):
     references = [
-        "{rtweet}"
+        "{rtweet}",
     ]
 
     text = str(readme)
@@ -53,6 +53,7 @@ def remove_r_references(readme):
 
 if __name__ == "__main__":
     path, readme = get_readme()
+    readme = readme.replace("{r}", '')
     readme = scrub_readme(readme)
     with open(path, 'w') as file:
         file.write(readme)
