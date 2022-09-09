@@ -1,4 +1,3 @@
-
 # LEGO sets
 
 The data this week comes from [rebrickable](https://rebrickable.com/downloads/) courtesy of [Georgios Karamanis](https://github.com/rfordatascience/tidytuesday/issues/455).
