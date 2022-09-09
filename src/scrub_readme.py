@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 from datetime import datetime
 
-YEAR = datetime.now().year
+YEAR = str(datetime.now().year)
 
 def scrub_readme(readme):
     text = remove_code_blocks(readme)
@@ -18,8 +18,9 @@ def remove_code_blocks(readme):
 
 
 def get_readme():
+    print(Path(__file__).resolve().parent.parent / 'data' / YEAR)
     data_directories = (Path(__file__).resolve().parent.parent / 'data' / YEAR).iterdir()
-    dir_path = max([x.as_posix() for x in data_directories if x.isdir()])
+    dir_path = max([x.as_posix() for x in data_directories if x.is_dir()])
     readme_path = [x.as_posix() for x in Path(dir_path).iterdir() if 'readme' in x.as_posix().lower()][0]
     with open(readme_path, 'r+') as file:
         readme = file.read()
