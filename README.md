@@ -13,8 +13,8 @@ And most importantly **have fun**!! (non-optional 😊)
 2. Navigate into a location you would like to store this project
 3. Run the following command: `git clone https://github.com/learn-co-curriculum/tidytuesday.git`
 4. Navigate into the `tidytuesday` directory
-5. Run the following command: `chmod u+x start`
-6. Run the following command: `start`
+5. Run the following command: `chmod u+x bin/start`
+6. Run the following command: `bin/start`
 
 ## Every Tuesday
 Every Tuesday a new dataset is added to this project. To begin a tidytuesday challenge, complete the following two steps:
