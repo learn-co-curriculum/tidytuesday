@@ -38,27 +38,7 @@ The data this week comes from [rebrickable](https://rebrickable.com/downloads/) 
 
 ### 
 
-```
-# Get the Data
 
-# Read in with tidytuesdayR package 
-# Install from CRAN via: install.packages("tidytuesdayR")
-# This loads the readme and all the datasets for the week of interest
-
-# Either ISO-8601 date or year/week works!
-
-tuesdata <- tidytuesdayR::tt_load('2022-09-06')
-tuesdata <- tidytuesdayR::tt_load(2022, week = 36)
-
-inventories <- tuesdata$inventories
-
-# Or read in the data manually
-
-inventories <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-06/inventories.csv.gz')
-inventory_sets <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-06/inventory_sets.csv.gz')
-sets <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-06/sets.csv.gz')
-
-```
 ### Data Dictionary
 
 # `inventories.csv.gz`
@@ -90,25 +70,3 @@ sets <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidyt
 
 ### 
 
-```r
-library(tidyverse)
-
-all_csvs <- list.files("2022/2022-09-06") |> 
-  stringr::str_subset(".csv")
-  
-all_csvs
-
-inventories <- read_csv("2022/2022-09-06/inventories.csv.gz")
-inventory_sets <- read_csv("2022/2022-09-06/inventory_sets.csv.gz")
-sets <- read_csv("2022/2022-09-06/sets.csv.gz")
-
-all_df <- left_join(inventories, inventory_sets, by = "set_num") |>
-  left_join(sets, by = "set_num") 
-
-ex_plot <- all_df |> 
-  ggplot(aes(x = num_parts)) +
-  geom_density() +
-  scale_x_log10()
-
-ggsave("2022/2022-09-06/pic2.png", ex_plot, dpi = "retina", height = 4, width = 6)
-```
