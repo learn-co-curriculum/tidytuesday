@@ -24,6 +24,10 @@ def save_index(index):
 
 
 if __name__ == "__main__":
+    dirpath, readmepath, readme = _readme()
     index = create_index()
     save_index(index)
+
+    with open(Path(__file__).resolve().parent / 'open_directory.txt', 'w') as file:
+        file.write(dirpath)
 
