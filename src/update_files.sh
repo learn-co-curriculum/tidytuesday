@@ -15,6 +15,6 @@ git add data/
 git rm data.txt
 git rm -r static/
 git rm -r tidytuesday_tweets/
-git checkout --ours .
+git checkout --ours README.md
 git commit -m 'updating data files'
 jupyter lab $notebook_dir
