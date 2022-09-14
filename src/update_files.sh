@@ -10,6 +10,11 @@ python scrub_readme.py
 python create_index.py
 notebook_dir=$(cat open_directory.txt)
 rm open_directory.txt
-git add ../data
+cd ..
+git add data/
+git rm data.txt
+git rm -r static/
+git rm -r tidytuesday_tweets/
+git checkout --ours .
 git commit -m 'updating data files'
 jupyter lab $notebook_dir
