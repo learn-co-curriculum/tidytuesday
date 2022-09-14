@@ -1,4 +1,3 @@
-The data this week comes from [Bigfoot Field Researchers Organization (BFRO)](https://data.world/timothyrenner/www.bfro.net) by way of [Data.World](https://data.world/timothyrenner/bfro-sightings-data).
 
 A [bigfoot article](https://timothyrenner.github.io/datascience/2017/06/30/finding-bigfoot.html) by Timothy Renner.
 
