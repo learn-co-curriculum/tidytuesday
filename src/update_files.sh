@@ -1,7 +1,7 @@
 git add .
 git commit -m 'commiting unstaged changes'
 git checkout master
-git pull origin master
+git pull https://github.com/rfordatascience/tidytuesday.git master
 git checkout flatiron
 git checkout master data/
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
