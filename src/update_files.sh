@@ -1,4 +1,8 @@
-git add .
+git rm ../data.txt
+git rm -r -f ../static/
+git rm -r -f ../tidytuesday_tweets/
+git checkout --ours ../README.md
+git add ../README.md
 git commit -m 'commiting unstaged changes'
 git checkout master
 git pull https://github.com/rfordatascience/tidytuesday.git master
@@ -17,4 +21,5 @@ git rm -r static/
 git rm -r tidytuesday_tweets/
 git checkout --ours README.md
 git commit -m 'updating data files'
+echo "Opening a notebook at $notebook_dir"
 jupyter lab $notebook_dir
