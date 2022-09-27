@@ -1,4 +1,3 @@
-
 # Artists in the USA
 
 The data this week comes from [arts.gov](https://www.arts.gov/impact/research/arts-data-profile-series/adp-31/data-tables) by way of [Data is Plural](https://www.data-is-plural.com/archive/2022-09-21-edition/)
